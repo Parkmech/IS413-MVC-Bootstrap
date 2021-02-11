@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<string>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Best Restaurants in the Provo Area</title>
+    <meta name="viewport"content="width=device-width" />
+</head>
+
+<body>
+    <div class="text-center">
+        <h1> Best Restaurants in the Provo Area </h1>
+    </div>
+    <ul>
+        @foreach (string i in Model)
+        {
+            <li class="list-group-item">@Html.Raw(i)</li>
+        }
+    </ul>
+</body>
+
+
+</html>

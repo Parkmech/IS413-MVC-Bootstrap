@@ -1,0 +1,17 @@
+﻿@*<!--Parker Mecham, Section 1-->
+    @*
+
+        For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model BestRestaurants.Models.AddRestaurant
+@{
+
+    ViewData["Title"] = "Suggestion Confirmation";
+}
+
+<h1>
+    Thanks for suggesting @Model.RestaurantName for our list of the best restaurants in the Provo area!
+</h1>
+<div class="text-center">
+    <p>Want to see the restaurants suggested so far? Click <a asp-action="SuggestedRestaurants">Here</a></p>
+</div>
